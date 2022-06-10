@@ -6,8 +6,6 @@ node_modules/
 /.pnp
 .pnp.js
 build/
-index.css
-index.js
 testfile.js
 
 
