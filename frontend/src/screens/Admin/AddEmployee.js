@@ -91,7 +91,7 @@ function AddEmployee({ setAddEmployee }) {
               <label htmlFor="host" className="admin__login__label">
                 Host<span style={{ color: "red" }}>*</span>{" "}
                 <span style={{ color: "grey", fontSize: "10px" }}>
-                  Your host, may be aesthetic.com
+                  Your host, may be gradia.com
                 </span>
               </label>
               <br />
@@ -110,7 +110,7 @@ function AddEmployee({ setAddEmployee }) {
                 Email<span style={{ color: "red" }}>*</span>
                 <span style={{ color: "grey", fontSize: "10px" }}>
                   Email of your employee associated with host. May be
-                  app@aesthetic.com
+                  andrew@gradia.com
                 </span>
               </label>
               <br />
@@ -128,7 +128,7 @@ function AddEmployee({ setAddEmployee }) {
               <label htmlFor="email_password" className="admin__login__label">
                 Email Password<span style={{ color: "red" }}>*</span>
                 <span style={{ color: "grey", fontSize: "10px" }}>
-                  Something like Password of app@aesthetic.com
+                  Something like Password of andrew@gradia.com
                 </span>
               </label>
               <br />

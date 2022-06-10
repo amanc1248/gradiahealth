@@ -39,7 +39,11 @@ function AdminHeader() {
       )}
       <Navbar expand="lg" bg="#F2EBD1" className="the__navbar">
         <Navbar.Brand href="/" className={"navbar__brand"}>
-          EasyPizi
+          <img
+            src="https://assets.website-files.com/616885e9a33aab5295799826/61700487c68196cd1123aa58_logo.png"
+            alt="gradia image"
+            height="60px"
+          />
         </Navbar.Brand>
         {/* INside the navbar.collapse will be everything which will be collapsed */}
         <Navbar.Collapse

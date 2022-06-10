@@ -75,8 +75,8 @@ function AdminHome() {
                 alt="add emplyee"
                 className="add__employee__users__image"
               />
-              <h3>Add employee and users</h3>
-              <h6>Employee can send any updates to users</h6>
+              <h3>Add employee and patient/physician</h3>
+              <h6>Employee can send any updates to patient/physician</h6>
               <button
                 className="add__employee__button"
                 onClick={showAddEmployee}
@@ -84,7 +84,7 @@ function AdminHome() {
                 Add Employee
               </button>
               <button className="add__employee__button" onClick={showAddUser}>
-                Add User
+                Add patient/physician
               </button>
             </div>
             <div className="users__container col-lg-6 col-md-12 col-sm-12">
@@ -99,7 +99,7 @@ function AdminHome() {
                   className={`the__tab ${showUsers && "active__tab"}`}
                   onClick={showSecondTab}
                 >
-                  Users
+                  patient/physician
                 </div>
               </div>
               {showEmployees && <AdminEmployees></AdminEmployees>}

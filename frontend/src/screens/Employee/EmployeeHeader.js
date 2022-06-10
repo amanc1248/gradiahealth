@@ -61,7 +61,7 @@ function EmployeeHeader() {
         >
           <Nav.Link className="admin__header__icons first__header__link second__header__link">
             {/* <WorkIcon></WorkIcon> */}
-            🥰 Users
+            patients/ physicians
           </Nav.Link>
 
           <Nav.Link>

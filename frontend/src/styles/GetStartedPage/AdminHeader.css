@@ -9,7 +9,7 @@
 
   }
   .the__navbar{
-    background-color: #F2EBD1;
+    background-color: white;
   }
   
   .hamburger__icon {
@@ -17,7 +17,7 @@
     }
     .login__admin__button{
       background-color: white;
-      border: 1px solid black;
+      border: 1px solid #FF9900;
       border-radius: 4px;
       padding: 8px 10px ;
       font-weight: 700;
@@ -28,7 +28,7 @@
     }
     
   .login__employee__button{
-    background-color: #01081E;
+    background-color: #FF9900;
     color: white;
     border-radius: 4px;
     padding: 8px 10px ;

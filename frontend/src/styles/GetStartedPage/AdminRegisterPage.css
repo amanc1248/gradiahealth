@@ -75,8 +75,8 @@ justify-content: center;
 align-items: center;
 }
 .main__loader__text{
-    height: 100px;
-    width: 100px;
+    /* height: 100px;
+    width: 100px; */
     background-color: black;
     color: white;
     border-radius: 8px;
@@ -86,6 +86,7 @@ justify-content: center;
 align-items: center;
 font-size: 35px;
 font-weight: 800;
+padding: 5%;
 }
 
 /* steps */

@@ -9,6 +9,14 @@ import HomeEmployeeLogin from "../../components/HomeEmployeeLogin";
 import "../../styles/GetStartedPage/GetStartedPage.css";
 import AdminRegisterPage from "./AdminRegisterPage";
 import AdminHeader from "./AdminHeader";
+import {
+  adminLoginClean,
+  checkAdminLoginStatusClean,
+} from "../../actions/adminActions";
+import {
+  checkEmployeeLoginStatusClean,
+  employeeLoginClean,
+} from "../../actions/employeeActions";
 const GetStartedPage = () => {
   const dispatch = useDispatch();
 
@@ -21,13 +29,17 @@ const GetStartedPage = () => {
     employeeError === "employeeLoginExpired" || employeeError === "notLoggedIn"
       ? true
       : false;
-  const [adminLogin, setAdminLogin] = useState(adminErrorBool);
+  const [adminLogin, setAdminLogin] = useState(false);
   const showAdminLogin = () => {
+    dispatch(adminLoginClean());
+    dispatch(checkAdminLoginStatusClean());
     setAdminLogin(true);
   };
 
-  const [employeeLogin, setEmployeeLogin] = useState(employeeErrorBool);
+  const [employeeLogin, setEmployeeLogin] = useState(false);
   const showEmployeeLogin = () => {
+    dispatch(employeeLoginClean());
+    dispatch(checkEmployeeLoginStatusClean());
     setEmployeeLogin(true);
   };
   // dispatch(adminLoginClean());
@@ -43,22 +55,11 @@ const GetStartedPage = () => {
   };
   return (
     <>
-      {showAdminRegister && (
-        <AdminRegisterPage
-          setAdminLogin={setShowAdminRegister}
-        ></AdminRegisterPage>
-      )}{" "}
       {adminLogin && (
-        <HomeAdminLogin
-          setAdminLogin={setAdminLogin}
-          adminError={adminError}
-        ></HomeAdminLogin>
+        <HomeAdminLogin setAdminLogin={setAdminLogin}></HomeAdminLogin>
       )}
       {employeeLogin && (
-        <HomeEmployeeLogin
-          setAdminLogin={setEmployeeLogin}
-          employeeError={employeeError}
-        ></HomeEmployeeLogin>
+        <HomeEmployeeLogin setAdminLogin={setEmployeeLogin}></HomeEmployeeLogin>
       )}
       <div className="getstarted__page">
         {/* navbar */}
@@ -67,24 +68,36 @@ const GetStartedPage = () => {
         <div className="row get__started__section ">
           <div className="col col-lg-6 col-md-12 col-sm-12  text__section">
             <div className="text__section__title">
-              Manage your all employees & users all in one place.
+              Manage your all employees, patients, & physicians all in one
+              place.
             </div>
             <div className="text__section__subtitle">
-              Admin can add employees and users. And Employees can send any
-              updates via email.🎉
+              Admin can add employees, patients, or physicians. And Employees
+              can send any updates to patients or physicians via email.🎉
             </div>
             <div className="">
-              <button
+              {/* <button
                 className="get__started__button"
                 onClick={showAdminRegisterFnc}
               >
                 Get Started
+              </button> */}
+              <button className="login__admin__button" onClick={showAdminLogin}>
+                Admin SignIn
+              </button>
+              <br />
+              <br />
+              <button
+                className="login__employee__button"
+                onClick={showEmployeeLogin}
+              >
+                Employee SignIn
               </button>
             </div>
           </div>
           <div className="col col-lg-6 col-md-12 col-sm-12 order-lg-0 order-first image__section">
             <img
-              src="https://res.cloudinary.com/proudposhak-com/image/upload/v1653551987/easypizi/busy-project-manager-overwhelmed-by-work_1_ogglay.png"
+              src="https://res.cloudinary.com/proudposhak-com/image/upload/v1654853786/easypizi/patient-consulting-with-a-medical-professional_k8zwlg.png"
               alt="getstarted"
               className="getStarte__page__image"
             />
