@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
 .App {
   text-align: center;
+  background-color: #F2EBD1;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  padding-bottom: 100px;
 }
 
 .App-logo {
@@ -21,7 +27,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -36,3 +41,4 @@
     transform: rotate(360deg);
   }
 }
+

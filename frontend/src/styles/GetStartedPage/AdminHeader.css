@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+.navbar__brand{
+    margin-right: 50% !important;
+    font-size: 35px !important;
+    font-weight: 700 !important;
+    font-family: 'Pacifico';
+
+  }
+  .the__navbar{
+    background-color: #F2EBD1;
+  }
+  
+  .hamburger__icon {
+      color: black;
+    }
+    .login__admin__button{
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 4px;
+      padding: 8px 10px ;
+      font-weight: 700;
+      font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+
+    }
+    
+  .login__employee__button{
+    background-color: #01081E;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 10px ;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1.2px solid white;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+  
+  
+  }
